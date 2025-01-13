@@ -1,7 +1,7 @@
 # gno-fuzz-comparer
 A tool that executes fuzzed input against various `gno` and `go` command line tools, and compares their output for discrepancies to find bugs.
 
-Currently this only supports a simple deterministic fuzzer that spams `go mody tidy` and `gno mod tidy` with a range of unicode characters to find differences in how they parse modfiles. In the future, this can be extended to do other kinds of fuzzing against these targets, as well as adding new targets.
+Currently this only supports a simple deterministic fuzzer that spams `go mody tidy` and `gno mod tidy` with a range of unicode characters to find differences in how they parse modfiles. In the future, this can be extended to do other kinds of fuzzing against these targets, as well as adding new targets. Related gno issue: https://github.com/gnolang/gno/issues/2426
 
 The program is multi-threaded to speed along progress.
 
